@@ -1,0 +1,459 @@
+/**
+ * Page name
+ * Copyright 2017
+ * Author
+ * Licensed 
+ */
+/*------------------------------------*\
+    Content
+\*------------------------------------*/
+/**
+ * Content............You're reading it!
+ * Globel...............Set common style
+ * Layout...........Set grid
+ * Components...........Set components styles
+ */
+ 
+ 
+/*------------------------------------*\
+    Globel
+\*------------------------------------*/
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+html,body{
+	font-family: '微軟正黑體',arial;
+}
+h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+/*------------------------------------*\
+    Layout
+\*------------------------------------*/
+.container{
+	margin: 0 auto;
+	width: 1200px;
+
+	/*border: 1px solid #ccc;*/
+}
+.container-2{
+	margin: 0 auto;
+	width: 1200px;
+	height: 100%;
+	background-color: #f8a25c;
+	transform: translate(0,-15%);
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #d8d8d8;
+	z-index: 500;
+}
+
+.title-h1{
+	margin: auto;
+	width: 100%;
+	font-size: 28px;
+	line-height: 48px;
+	color: #666;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	margin-bottom: 16px;
+	margin-top: 8px;
+}
+.title-h2{
+	/*float: left;*/
+	margin: auto;
+	width: 100%;
+	line-height: 36px;
+	font-size: 24px;
+	color: #666;
+	
+	overflow: hidden;
+	/* 讓文字後面切齊 */
+	text-align: justify;
+}
+
+.title-h2-red{
+	margin: auto;
+	width: 100%;
+	font-size: 20px;
+	line-height: 24px;
+	color: #b70b0b;	
+
+}
+.title-h3{
+	width: 100%;
+	font-size: 18px;
+	color: #666;
+	line-height: 1.5;
+
+}
+.title-h4{
+	width: 100%;
+	font-size: 16px;
+	color: #666;
+	line-height: 1.5;
+
+}
+.title-h5{
+	width: 100%;
+	font-size: 14px;
+	color: #666;
+	line-height: 1.5;
+
+}
+.title-h3-red{
+	width: 100%;
+	font-size: 18px;
+	color: #b70b0b;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.title-hotnew{
+	float: right;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.title-news{
+	font-weight: bold;
+	line-height: 70px;
+}
+.title-news-2{
+	text-align: left;
+	line-height: 30px;
+	padding-bottom: 20px;
+
+	min-height: 170px;
+}
+.container .title-h1-red{
+	float: left;
+	width: 30%;
+}
+
+/*------------------------------------*\
+    Components
+\*------------------------------------*/
+/* navbar */
+.navbar{
+	height: 50px;
+	/*background-color: #d8d8d8;*/
+	z-index: 400;
+	padding-left: 18px;
+	padding-right: 18px;
+	/*把LOGO推進去*/
+}
+.hero{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.brand{
+	display: inline-block;
+	width: 180px;
+	height: 50px;
+	background-image: url(../image/logo/logo-w.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	white-space: nowrap;
+	text-indent: 100%;
+	overflow: hidden;
+	/*把文字隱藏起來*/
+}
+.navbar .nav{
+	float: left;
+	/*置右*/
+}
+.navbar .nav .nav-item{
+	float: left;
+	/*置左*/
+}
+.navbar .nav .nav-item .nav-link{
+	display: inline-block;
+	line-height: 10px;
+	padding: 20px 16px;
+	color: #fff;
+	background-color: #f8a25c;
+	transition: all 0.3s;
+}
+.navbar .nav .nav-item .nav-link:hover{
+	background-color: #222931;
+}
+
+.navbar .nav-2{
+	float: right;
+}
+.navbar .nav-2 .nav-item{
+	float: left;
+}
+.navbar .nav-2 .nav-item .nav-link{
+	display: inline-block;
+	line-height: 10px;
+	padding: 20px 16px;
+	color: #fff;
+	transition: all 0.3s;
+}
+.navbar .nav-2 .nav-item .nav-link:hover{
+	color: #000;
+}
+
+/* social */
+.navbar .social{
+	float: right;
+}
+.navbar .social .social-item{
+	float: left;
+}
+.navbar .social .social-item .social-link{
+	display: inline-block;
+	line-height: 10px;
+	padding: 20px 16px;
+	color: #fff;
+	transition: all 0.3s;
+}
+.navbar .social .social-item .social-link:hover{
+	color: #000;
+}
+/*jumbotron*/
+.jumbotron{
+	padding-top: 225px;
+	padding-bottom: 160px;
+	/*border: 1px solid #000;*/
+	
+	background-image: url(../image/jumbotron/jumbotron02.jpg);
+	/*背景圖*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.jumbotron-text .title-h2{
+	margin-bottom: 16px;
+} 
+/* btn */
+/*設定好基本再把需要的加進HTML*/
+.btn{
+	display: inline-block;
+	font-size: 16px;
+	list-style: 24px;
+	padding: 4px 16px;
+	border-radius: 4px;
+
+	transition: all 0.5s;
+}
+.btn.btn-lg{
+	padding: 8px 32px;
+}
+.btn.btn-primary{
+	background-color: #f8a25c;
+	border: 1px solid #f8a25c;
+	color: #fefefe;
+}
+.btn.btn-primary:hover{
+	background-color: #222931;
+	border: 1px solid #222931;
+
+}
+.btn.btn-secondary{
+	background-color: #222931;
+	border: 1px solid #222931;
+	color: #fefefe;
+}
+.btn.btn-secondary:hover{
+	background-color: #f8a25c;
+	border: 1px solid #f8a25c;
+	color: #fefefe;
+}
+.btn-cernter{
+	text-align: center;
+	/*文字置中*/
+}
+.jumbotron .btn-cernter{
+	float: left;
+}
+.container-3 .nav .btn{
+	float: right;
+}
+.hero .container .col-1-4 .nav{
+	float: right;
+}
+/* hero */
+.row{
+/*	margin-left: -16px;
+	margin-top: -16px;*/
+}
+.row:after{
+	content: '';
+	display: block;
+	clear: both;
+	/*清除浮動*/
+}
+.col-1-1,.col-1-2,.col-1-3,.col-1-4,.col-1-6,.col-3-4,
+.col-1-5,.col-4-5,.col-1-10,.col-9-10{
+	float: left;
+	/*border: 1px solid red;*/
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.col-1-1{
+	width: 100%;
+}
+.col-1-2{
+	width: 50%;
+}
+.col-1-3{
+	width: 33.3333333333%;
+}
+.col-1-4{
+	width: 25%;
+}
+.col-3-4{
+	width: 75%;
+}
+.col-1-5{
+	width: 70%;
+}
+.col-4-5{
+	width: 30%;
+}
+.col-1-10{
+	width: 15%;
+}
+.col-9-10{
+	width: 85%;
+}
+/* section-intro */
+.section-intro{
+	text-align: center;
+	margin-bottom: 40px;
+	/*border: 1px solid #000;*/
+	margin-top: 20px;
+	background-color: #ccc;
+
+	padding: 5%;
+}
+.img-container{
+	width: 100%;
+	display: block;
+	position: relative;
+	/*border: 1px solid #000;*/
+
+}
+.img-container:before{
+	content: '';
+	display: block;
+	width: 100%;
+	padding-top: 75%;
+	background-color: #ccc;
+}
+.img-container .news-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.about{
+	line-height: 60px;
+	line-height: 28px;
+
+	float: left;
+	padding-left: 16px;
+	line-height: 1.5;
+
+}
+.about:after{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 20px;
+	background-color: #f8a25c;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.origion{
+	display: inline-block;
+	/*height: 140px;*/
+	line-height: 1.5;
+
+}
+
+/*------------------------------------*\
+    圓形圖片
+\*------------------------------------*/
+.avatar{
+	/* 確保是一個可調大小的圖*/
+	display: inline-block;
+	/* 撐到最大 */
+	box-sizing: border-box;
+	width: 100px;
+	/* 多的隱藏 */
+	overflow: hidden;
+
+	background-color: #b2bac4;
+	border: 1px solid #b2bac4;
+
+	/* 圓形 */
+	border-radius: 50%;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.avatar:before{
+	/* 需要寫avatar上一層的高度*/
+	content: '';
+	display: block;
+	/* 決定比例 */
+	width: 100%;
+	padding-top: 100%;
+}
+.col-1-4__avatar{
+	padding: 0;
+}
+
+.col-1-1__row{
+	padding: 10px;
+}
+
+/* musson */
+.musson{
+	height: 140px;
+}
+
+/* about */
+.index-about .col-1-1{
+	border: 1px solid #000;
+
+}
+.index-about .col-9-10 .title-h2{
+	margin-bottom: 16px;
+	margin-top: 9px;
+}
